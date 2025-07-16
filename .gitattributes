@@ -1,0 +1,2 @@
+wiki/documents filter=lfs diff=lfs merge=lfs -text
+wiki/embeddings filter=lfs diff=lfs merge=lfs -text
