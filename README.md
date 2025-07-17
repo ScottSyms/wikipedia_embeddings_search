@@ -24,4 +24,4 @@ then run the demo  with
 
  demo at
 
- https://asciinema.org/connect/e03dc230-620c-42c3-9b58-c161fa42bba7
+![Demo file](demo.gif)
