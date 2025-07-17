@@ -12,6 +12,7 @@ while True:
     query = input("****\n>> ")
     if query.lower() in {"exit", "quit"}:
         break
+    query="I am a public servant in Canada. " + query
 
     # Search top 3 results
     start=time.time()
