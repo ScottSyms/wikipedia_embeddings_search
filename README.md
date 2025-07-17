@@ -1,19 +1,23 @@
-uses uv
+This project builds on a txtai project to query a vectorized extraction of English Wikipedia.  The embeddings/documents only cover the introductory section of each Wikipedia entry.
 
-clone repo
+The project uses uv for dependency management.
+
+Clone the repo and sync the packages with
 
 sync packages
 
-uv sync
+`uv sync`
 
-create 'wiki' subfolder
-
-download the files from
+Create a subfolder called `wiki` and populate it with the following files from
 
 https://huggingface.co/NeuML/txtai-wikipedia/tree/main
 
-into the wiki folder
+* config.json
+* documents
+* embeddings
 
-then run with 
+then run the demo  with 
 
- KMP_DUPLICATE_LIB_OK=TRUE uv run main.py
+ `KMP_DUPLICATE_LIB_OK=TRUE uv run main.py`
+
+ The you'll be prompted for search terms and shown 10 results.
