@@ -1,6 +1,7 @@
 from txtai import Embeddings
 import json
 import time
+import datetime
 
 # Load the local embeddings index
 embeddings = Embeddings({"path": "sentence-transformers/all-MiniLM-L6-v2", "content": True})
@@ -12,7 +13,7 @@ while True:
     query = input("****\n>> ")
     if query.lower() in {"exit", "quit"}:
         break
-    query="I am a public servant in Canada. " + query
+    query="I am a public servant in Canada and the current date is " + str(datetime.date.today()) + ". " + query
 
     # Search top 3 results
     start=time.time()
