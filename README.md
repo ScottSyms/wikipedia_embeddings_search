@@ -1,10 +1,18 @@
 uses uv
 
-download the files at
+clone repo
+
+sync packages
+
+uv sync
+
+create 'wiki' subfolder
+
+download the files from
 
 https://huggingface.co/NeuML/txtai-wikipedia/tree/main
 
-into the wiki subfolder
+into the wiki folder
 
 then run with 
 
